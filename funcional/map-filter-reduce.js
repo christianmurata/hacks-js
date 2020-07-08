@@ -15,14 +15,17 @@ const animais = [
 	{ nome: 'Fedora', tipo: 'cat', idade: 2 },
 ];
 
-// map - percorre todo o array e realiza determinada operação
+// map - itera todos os elementos e realiza determinada operação para cada elemento
 
 const nomes = animais.map(animal => animal.nome);
 
-// filter - percorre todo array e realiza um filtro no mesmo
+// filter - itera todo array e realiza um filtro no mesmo
 
 const dogs = animais.filter(animal => animal.tipo == 'dog');
 
-// reduce -itera cada elemento do array, para no final retornar um unico valor
+// reduce - itera cada elemento do array, para no final retornar um unico valor
 
 const somaIdade = animais.reduce((count, animal) => count + animal.idade, 0);
+
+// resultado final
+console.log(nomes, dogs, somaIdade);
